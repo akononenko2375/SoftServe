@@ -6,7 +6,7 @@ function clock(selector, gmt) {
   let hours = addZero(date.getUTCHours());
   let minutes = addZero(date.getUTCMinutes());
   let seconds = addZero(date.getUTCSeconds());
-  let time = hours + Number(gmt) + ":" + minutes + ":" + seconds;
+  let time = `${hours + Number(gmt)}:${minutes}:${seconds}`;
 
   document.querySelector(selector).innerHTML = time;
 }
