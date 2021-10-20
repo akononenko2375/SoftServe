@@ -1,0 +1,17 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 300px;
+    margin: 20px auto 0;
+    border: 1px solid #000000;
+    padding: 15px;
+    text-align: center;
+}
+
+.local {
+    margin-bottom: 20px;
+}
