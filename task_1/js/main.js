@@ -3,10 +3,10 @@ let localGMT = (new Date().getTimezoneOffset() / 60) * -1;
 
 function clock(selector, gmt) {
   let date = new Date();
-  let hours = addZero(date.getUTCHours());
+  let hours = addZero(date.getUTCHours() + gmt);
   let minutes = addZero(date.getUTCMinutes());
   let seconds = addZero(date.getUTCSeconds());
-  let time = `${hours + Number(gmt)}:${minutes}:${seconds}`;
+  let time = `${hours}:${minutes}:${seconds}`;
 
   document.querySelector(selector).innerHTML = time;
 }
