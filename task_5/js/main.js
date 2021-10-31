@@ -1,7 +1,11 @@
 // ip-api: http://ip-api.com/json
 // openweather: a34a6cba2483a2867968ae2f62ed684e
 
-const localApi = 'http://ip-api.com/json';
+// https://api.ipgeolocation.io/ipgeo?apiKey=da814d5beea744d4b4a789fae9ff35fe
+
+const localApi =
+    'https://api.ipgeolocation.io/ipgeo?apiKey=da814d5beea744d4b4a789fae9ff35fe';
+// const localApi = 'http://ip-api.com/json';
 const weatherApi = 'a34a6cba2483a2867968ae2f62ed684e';
 
 const place = document.querySelector('.place');
@@ -16,6 +20,8 @@ async function showWeather() {
     try {
         const ipResponse = await fetch(localApi);
         const ipData = await ipResponse.json();
+        console.log(ipData);
+
         let city = ipData.city;
 
         const response = await fetch(
