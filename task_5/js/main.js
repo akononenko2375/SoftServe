@@ -19,7 +19,7 @@ async function showWeather() {
         let city = ipData.city;
 
         const response = await fetch(
-            `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${weatherApi}`
+            `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${weatherApi}`
         );
         const data = await response.json();
 
