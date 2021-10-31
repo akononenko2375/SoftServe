@@ -1,11 +1,7 @@
 // ip-api: http://ip-api.com/json
 // openweather: a34a6cba2483a2867968ae2f62ed684e
 
-// https://api.ipgeolocation.io/ipgeo?apiKey=da814d5beea744d4b4a789fae9ff35fe
-
-const localApi =
-    'https://api.ipgeolocation.io/ipgeo?apiKey=da814d5beea744d4b4a789fae9ff35fe';
-// const localApi = 'http://ip-api.com/json';
+const localApi = 'http://ip-api.com/json';
 const weatherApi = 'a34a6cba2483a2867968ae2f62ed684e';
 
 const place = document.querySelector('.place');
